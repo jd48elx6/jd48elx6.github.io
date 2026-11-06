@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>糖心官网-糖心官网首页入口_糖心官网最新地址与使用说明</title>
+<meta name="description" content="糖心官网首页入口，汇集糖心官网最新地址、访问方式、常见问题与内容分区说明，帮助访客快速找到糖心官网入口并顺利浏览。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff6f91'/%3E%3Cstop offset='1' stop-color='%23ffb86b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M32 58C18 48 6 38 6 24A12 12 0 0 1 32 16 12 12 0 0 1 58 24c0 14-12 24-26 34z' fill='url(%23g)'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#14090f;
+  --bg-soft:#1d0e15;
+  --card:#241219;
+  --card-2:#2c161f;
+  --line:rgba(255,255,255,.09);
+  --text:#f6edf1;
+  --muted:#bda6b1;
+  --pink:#ff6f91;
+  --pink-2:#ff9a7a;
+  --amber:#ffc36b;
+  --radius:18px;
+  --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:
+    radial-gradient(900px 500px at 82% -8%, rgba(255,111,145,.18), transparent 62%),
+    radial-gradient(760px 460px at 6% 6%, rgba(255,195,107,.10), transparent 60%),
+    var(--bg);
+  color:var(--text);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 22px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:.14em;color:var(--amber);
+  text-transform:uppercase;
+}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--amber);opacity:.7}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(14px);
+  background:rgba(20,9,15,.82);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  display:flex;align-items:center;gap:26px;
+  height:70px;
+}
+.brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.brand-mark{
+  width:38px;height:38px;border-radius:12px;
+  background:linear-gradient(140deg,var(--pink),var(--pink-2) 55%,var(--amber));
+  display:grid;place-items:center;
+  box-shadow:0 6px 22px rgba(255,111,145,.35);
+}
+.brand-mark svg{width:21px;height:21px}
+.brand-name{
+  font-size:18px;font-weight:700;letter-spacing:.02em;
+  background:linear-gradient(90deg,#fff,#ffd9e2 60%,#ffd2a8);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  white-space:nowrap;
+}
+.nav-links{
+  display:flex;align-items:center;gap:4px;
+  margin-left:auto;flex-wrap:wrap;
+}
+.nav-links a{
+  font-size:14px;color:var(--muted);
+  padding:8px 13px;border-radius:10px;
+  transition:.2s;
+}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.06)}
+.nav-cta{
+  flex-shrink:0;
+  font-size:14px;font-weight:600;
+  padding:9px 18px;border-radius:11px;
+  color:#2a0c14;
+  background:linear-gradient(120deg,var(--pink),var(--pink-2));
+  box-shadow:0 8px 24px rgba(255,111,145,.28);
+  transition:.2s;
+}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(255,111,145,.38)}
+.menu-toggle{display:none}
+
+/* ---------- hero ---------- */
+.hero{
+  padding:64px 0 54px;
+  border-bottom:1px solid var(--line);
+  position:relative;overflow:hidden;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;
+  gap:52px;align-items:center;
+}
+h1{
+  font-size:clamp(30px,4.6vw,50px);
+  line-height:1.18;
+  letter-spacing:-.01em;
+  font-weight:800;
+  margin:16px 0 18px;
+}
+h1 .grad{
+  background:linear-gradient(100deg,#fff 8%,#ffd0dd 48%,#ffc38f);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.lede{color:var(--muted);font-size:16px;max-width:540px}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:15px;font-weight:600;
+  padding:12px 24px;border-radius:13px;
+  transition:.2s;border:1px solid transparent;
+}
+.btn-primary{
+  color:#2a0c14;
+  background:linear-gradient(120deg,var(--pink),var(--pink-2));
+  box-shadow:0 10px 30px rgba(255,111,145,.3);
+}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{
+  color:var(--text);
+  border-color:rgba(255,255,255,.16);
+  background:rgba(255,255,255,.03);
+}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.btn[aria-disabled="true"]{opacity:.92;pointer-events:none;cursor:default}
+.hero-stats{
+  display:flex;gap:30px;margin-top:34px;flex-wrap:wrap;
+}
+.hero-stats div span{
+  display:block;font-size:12.5px;color:var(--muted);letter-spacing:.04em;
+}
+.hero-stats div strong{
+  font-size:20px;font-weight:700;color:#fff;
+}
+
+/* hero art card */
+.hero-art{
+  position:relative;
+  border-radius:24px;
+  padding:26px;
+  background:linear-gradient(160deg,rgba(255,111,145,.16),rgba(255,195,107,.06) 60%,transparent);
+  border:1px solid rgba(255,255,255,.1);
+  box-shadow:0 30px 70px -30px rgba(0,0,0,.9);
+}
+.hero-art svg{width:100%;height:auto}
+.art-caption{
+  margin-top:18px;padding-top:16px;border-top:1px dashed rgba(255,255,255,.14);
+  font-size:13px;color:var(--muted);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+.art-caption b{color:#ffd9e2;font-weight:600}
+
+/* ---------- sections ---------- */
+section{padding:62px 0}
+.sec-head{max-width:660px;margin-bottom:34px}
+h2{
+  font-size:clamp(22px,2.9vw,30px);
+  line-height:1.3;font-weight:750;
+  margin:12px 0 12px;
+}
+.sec-head p{color:var(--muted);font-size:15px}
+
+/* entry cards */
+.entries{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.entry{
+  background:linear-gradient(165deg,var(--card-2),var(--card));
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:24px 22px;
+  transition:.25s;
+  display:flex;flex-direction:column;
+}
+.entry:hover{transform:translateY(-4px);border-color:rgba(255,111,145,.4)}
+.entry-ico{
+  width:42px;height:42px;border-radius:12px;
+  display:grid;place-items:center;margin-bottom:16px;
+  background:rgba(255,111,145,.13);
+  border:1px solid rgba(255,111,145,.22);
+}
+.entry-ico svg{width:20px;height:20px}
+.entry h3{font-size:16.5px;font-weight:700;margin-bottom:8px}
+.entry p{font-size:14px;color:var(--muted);flex:1}
+.entry .more{
+  margin-top:16px;font-size:13.5px;font-weight:600;color:var(--pink);
+  display:inline-flex;align-items:center;gap:6px;
+}
+
+/* guide / steps */
+.guide{
+  display:grid;grid-template-columns:.95fr 1.05fr;gap:44px;align-items:start;
+}
+.steps{display:flex;flex-direction:column;gap:14px}
+.step{
+  display:flex;gap:16px;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:18px 20px;
+}
+.step-n{
+  flex-shrink:0;width:30px;height:30px;border-radius:9px;
+  display:grid;place-items:center;
+  font-size:13.5px;font-weight:700;color:#2a0c14;
+  background:linear-gradient(130deg,var(--amber),var(--pink-2));
+}
+.step h3{font-size:15px;font-weight:700;margin-bottom:4px}
+.step p{font-size:13.8px;color:var(--muted)}
+
+/* faq */
+.faq{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line)}
+details{
+  border-bottom:1px solid var(--line);
+  padding:0;
+}
+details summary{
+  list-style:none;
+  cursor:pointer;
+  padding:20px 34px 20px 0;
+  position:relative;
+  font-size:15.5px;font-weight:650;
+  transition:.2s;
+}
+details summary::-webkit-details-marker{display:none}
+details summary::after{
+  content:"";
+  position:absolute;right:6px;top:50%;
+  width:8px;height:8px;
+  border-right:1.6px solid var(--pink);
+  border-bottom:1.6px solid var(--pink);
+  transform:translateY(-70%) rotate(45deg);
+  transition:.25s;
+}
+details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+details summary:hover{color:var(--pink)}
+details .faq-body{
+  padding:0 40px 22px 0;
+  font-size:14.2px;color:var(--muted);
+}
+
+/* notes band */
+.band{
+  background:linear-gradient(140deg,rgba(255,111,145,.11),rgba(255,195,107,.05));
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.band-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:26px;
+}
+.band-item h3{font-size:15.5px;margin-bottom:8px;font-weight:700}
+.band-item p{font-size:14px;color:var(--muted)}
+.band-item .num{
+  font-size:12.5px;color:var(--amber);letter-spacing:.1em;margin-bottom:10px;display:block;
+}
+
+/* footer */
+footer{
+  padding:46px 0 34px;
+  border-top:1px solid var(--line);
+  background:rgba(0,0,0,.22);
+}
+.foot-top{
+  display:flex;justify-content:space-between;gap:34px;flex-wrap:wrap;
+  padding-bottom:28px;border-bottom:1px solid var(--line);
+}
+.foot-brand{max-width:420px}
+.foot-brand p{font-size:13.5px;color:var(--muted);margin-top:12px}
+.foot-cols{display:flex;gap:56px;flex-wrap:wrap}
+.foot-col h4{font-size:13.5px;font-weight:700;margin-bottom:12px;color:#fff}
+.foot-col a{display:block;font-size:13.5px;color:var(--muted);padding:3px 0}
+.foot-col a:hover{color:var(--pink)}
+.copy{
+  padding-top:22px;display:flex;justify-content:space-between;gap:16px;
+  flex-wrap:wrap;font-size:12.5px;color:#8d7682;
+}
+
+/* responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero-art{order:2}
+  .entries{grid-template-columns:1fr 1fr}
+  .guide{grid-template-columns:1fr;gap:28px}
+  .band-grid{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .nav{height:62px;gap:10px}
+  .nav-links{
+    position:absolute;top:62px;left:0;right:0;
+    background:rgba(20,9,15,.98);
+    border-bottom:1px solid var(--line);
+    flex-direction:column;align-items:stretch;
+    padding:10px 16px 16px;
+    display:none;
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{padding:11px 12px;border-radius:10px}
+  .menu-toggle{
+    display:grid;place-items:center;margin-left:auto;
+    width:40px;height:40px;border-radius:11px;
+    background:rgba(255,255,255,.06);border:1px solid var(--line);
+    cursor:pointer;
+  }
+  .menu-toggle span{
+    display:block;width:16px;height:1.7px;background:#fff;position:relative;
+  }
+  .menu-toggle span::before,.menu-toggle span::after{
+    content:"";position:absolute;left:0;width:16px;height:1.7px;background:#fff;
+  }
+  .menu-toggle span::before{top:-5px}
+  .menu-toggle span::after{top:5px}
+  .nav-cta{display:none}
+  .hero{padding:40px 0 40px}
+  section{padding:44px 0}
+  .entries{grid-template-columns:1fr}
+  .hero-stats{gap:22px}
+  .hero-stats div strong{font-size:18px}
+  .foot-cols{gap:32px}
+  details summary{padding-right:28px}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="糖心官网">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 21C7.2 17.4 3.2 13.9 3.2 9.6A4.8 4.8 0 0 1 12 6.2a4.8 4.8 0 0 1 8.8 3.4c0 4.3-4 7.8-8.8 11.4z" fill="#2a0c14"/>
+        </svg>
+      </span>
+      <span class="brand-name">糖心官网</span>
+    </a>
+    <button class="menu-toggle" id="menuBtn" aria-label="展开导航" aria-expanded="false"><span></span></button>
+    <nav class="nav-links" id="navLinks" aria-label="主导航">
+      <a href="#entry">访问入口</a>
+      <a href="#guide">访问方式</a>
+      <a href="#sections">内容分区</a>
+      <a href="#faq">常见问题</a>
+      <a href="#notice">使用须知</a>
+    </nav>
+    <a class="nav-cta" href="#entry">进入首页</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Sugar Heart · 首页入口</span>
+        <h1><span class="grad">糖心官网</span></h1>
+        <p class="lede">
+          糖心官网是访问糖心内容的起点。本页把入口、访问方式、内容分区和常见问题集中在一处，
+          方便新访客第一次打开就知道从哪里进入，也方便老访客快速找回糖心官网首页。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#entry">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="#2a0c14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            查看访问入口
+          </a>
+          <a class="btn btn-ghost" href="#guide">先了解访问方式</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>首页入口</strong><span>一站式导航</span></div>
+          <div><strong>内容分区</strong><span>按类型浏览</span></div>
+          <div><strong>常见问题</strong><span>访问答疑</span></div>
+        </div>
+      </div>
+
+      <aside class="hero-art" aria-label="糖心官网主题插画">
+        <svg viewBox="0 0 420 300" role="img" aria-label="糖心官网入口示意插画">
+          <defs>
+            <linearGradient id="hg1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ff6f91"/>
+              <stop offset="1" stop-color="#ffc36b"/>
+            </linearGradient>
+            <linearGradient id="hg2" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#ff9a7a" stop-opacity=".9"/>
+              <stop offset="1" stop-color="#ff6f91" stop-opacity=".25"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="420" height="300" rx="20" fill="rgba(255,255,255,.03)"/>
+          <path d="M210 232C150 194 112 164 112 128a48 48 0 0 1 98-16 48 48 0 0 1 98 16c0 36-38 66-98 104z" fill="url(#hg2)"/>
+          <path d="M210 216C160 184 128 158 128 130a40 40 0 0 1 82-12 40 40 0 0 1 82 12c0 28-32 54-82 86z" fill="url(#hg1)" opacity=".92"/>
+          <circle cx="210" cy="128" r="20" fill="#14090f" opacity=".55"/>
+          <path d="M203 128l5 5 10-11" stroke="#ffe3ea" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <g stroke="rgba(255,255,255,.22)" stroke-width="1.4" stroke-linecap="round">
+            <path d="M62 74h34M62 88h20"/>
+            <path d="M330 206h30M330 220h16"/>
+          </g>
+          <g fill="#ffc36b">
+            <circle cx="76" cy="196" r="3"/>
+            <circle cx="342" cy="82" r="3.4"/>
+            <circle cx="300" cy="58" r="2.2"/>
+            <circle cx="118" cy="52" r="2.2"/>
+          </g>
+        </svg>
+        <div class="art-caption">
+          <span>入口 · 分区 · 答疑</span>
+          <b>糖心官网首页</b>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ENTRY -->
+  <section id="entry">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">访问入口</span>
+        <h2>从糖心官网首页开始的三条路径</h2>
+        <p>不同类型的访客需求不同：有人想直接进入首页，有人想先确认地址是否可靠，还有人只想找某一类内容。下面三条路径对应这三种情况。</p>
+      </div>
+      <div class="entries">
+        <article class="entry">
+          <span class="entry-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 11.5 12 4l8 7.5" stroke="#ff6f91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 10.5V20h11v-9.5" stroke="#ff6f91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>直接进入首页</h3>
+          <p>已确认域名的情况下，从本站页头品牌区或本栏目进入糖心官网首页，是最短的路径。建议把首页加入浏览器书签，下次无需重新查找。</p>
+          <a class="more" href="#guide">查看进入步骤
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="#ff6f91" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+        <article class="entry">
+          <span class="entry-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.4" stroke="#ffc36b" stroke-width="1.8"/><path d="M16 16l4.2 4.2" stroke="#ffc36b" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <h3>核对地址是否可靠</h3>
+          <p>网络上以“糖心官网”为名的页面较多，进入前先比对域名与页面标识，避免误入仿冒站点。本站只提供导航与说明，不代填任何账号信息。</p>
+          <a class="more" href="#faq">查看核对方法
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="#ff6f91" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+        <article class="entry">
+          <span class="entry-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4.5" width="7" height="7" rx="1.6" stroke="#ff9a7a" stroke-width="1.8"/><rect x="13" y="4.5" width="7" height="7" rx="1.6" stroke="#ff9a7a" stroke-width="1.8"/><rect x="4" y="13.5" width="7" height="7" rx="1.6" stroke="#ff9a7a" stroke-width="1.8"/><rect x="13" y="13.5" width="7" height="7" rx="1.6" stroke="#ff9a7a" stroke-width="1.8"/></svg>
+          </span>
+          <h3>按分区找内容</h3>
+          <p>进入糖心官网后，可按内容类型分区浏览，比在首页逐条翻找更省时间。下方内容分区栏目列出了常见分区与各自的浏览建议。</p>
+          <a class="more" href="#sections">查看内容分区
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="#ff6f91" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUIDE -->
+  <section id="guide">
+    <div class="wrap guide">
+      <div>
+        <span class="eyebrow">访问方式</span>
+        <h2>打开糖心官网的四个步骤</h2>
+        <p style="color:var(--muted);font-size:15px;margin-top:10px">
+          访问流程本身不复杂，容易出问题的通常是地址确认与浏览器环境两步。按顺序做完，多数访问障碍可以在进入前排除。
+        </p>
+        <div class="hero-actions" style="margin-top:24px">
+          <a class="btn btn-primary" href="#faq">遇到问题看答疑</a>
+          <a class="btn btn-ghost" href="#">下载</a>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="step-n">1</span>
+          <div>
+            <h3>确认域名与页面标识</h3>
+            <p>在地址栏核对域名拼写，进入后看页头品牌文字是否为“糖心官网”，两者一致再继续操作。</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-n">2</span>
+          <div>
+            <h3>使用主流浏览器打开</h3>
+            <p>建议使用较新版本的 Chrome、Edge 或 Safari。版本过旧时，页面样式与部分交互可能显示不完整。</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-n">3</span>
+          <div>
+            <h3>按分区浏览内容</h3>
+            <p>进入首页后，先看分区导航再决定看什么，比在信息流里逐条翻找更有效率，也更容易找到想重复访问的内容。</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-n">4</span>
+          <div>
+            <h3>收藏首页便于下次访问</h3>
+            <p>确认站点正常后把糖心官网首页加入书签，之后直接打开书签即可，无需再通过搜索或第三方链接跳转。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTIONS -->
+  <section id="sections">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">内容分区</span>
+        <h2>首页分区与各自的浏览建议</h2>
+        <p>糖心官网首页的内容按类型划分，不同分区适合不同的浏览节奏。先认识分区，再决定停留位置。</p>
+      </div>
+      <div class="band-grid">
+        <div class="band-item">
+          <span class="num">01</span>
+          <h3>推荐与更新区</h3>
+          <p>位于首页靠前位置，集中展示近期更新与推荐内容，适合没有明确目标、想先看看有什么的访客。更新频率相对较高，每次打开内容会有变化。</p>
+        </div>
+        <div class="band-item">
+          <span class="num">02</span>
+          <h3>分类浏览区</h3>
+          <p>按内容类型分组，适合目标明确的访客。想找某一类内容时，从这里进入比逐个翻推荐位更快，也便于之后按同一路径回访。</p>
+        </div>
+        <div class="band-item">
+          <span class="num">03</span>
+          <h3>个人与设置区</h3>
+          <p>用于查看个人相关状态和调整浏览偏好。设置项只影响本机浏览体验，不会改变站点本身的内容结构。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">常见问题</span>
+        <h2>关于糖心官网的常见疑问</h2>
+        <p>以下是访客最常提出的几类问题，答案只针对访问流程与页面使用，不涉及账号与内容细节。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>糖心官网首页打不开怎么办？</summary>
+          <div class="faq-body">先确认地址栏域名拼写无误，再换一个主流浏览器重试。若多个浏览器均无法打开，可能是本地网络或 DNS 解析问题，可切换网络环境后再试。不要通过来源不明的短链接反复跳转。</div>
+        </details>
+        <details>
+          <summary>如何判断自己进入的是不是糖心官网？</summary>
+          <div class="faq-body">主要看两点：地址栏域名是否与已知域名一致，页头品牌文字是否为“糖心官网”。仿冒页面常在域名上做细微改动，或在品牌文字里加入多余字符。任何要求额外下载未知程序的页面都应立即关闭。</div>
+        </details>
+        <details>
+          <summary>手机上能访问糖心官网吗？</summary>
+          <div class="faq-body">可以。糖心官网首页在手机浏览器中会自动调整布局，导航收进菜单按钮，内容按单列排列。建议使用手机自带浏览器或主流第三方浏览器的较新版本。</div>
+        </details>
+        <details>
+          <summary>忘记入口后怎么找回？</summary>
+          <div class="faq-body">如果之前已把首页加入书签，直接从书签打开即可。没有书签时，可通过本页页头的品牌区与访问入口栏目重新进入，避免在搜索结果中随意点击相似名称的页面。</div>
+        </details>
+        <details>
+          <summary>页面显示不全或样式错乱怎么处理？</summary>
+          <div class="faq-body">多数情况下是浏览器版本过旧或缓存文件异常。先更新浏览器，再清除缓存后重新加载。若仍异常，可尝试关闭浏览器插件后访问，部分插件会拦截页面脚本。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTICE -->
+  <section id="notice" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">使用须知</span>
+        <h2>访问前值得知道的三件事</h2>
+        <p>这些提示与糖心官网的日常访问直接相关，能减少大部分误操作。</p>
+      </div>
+      <div class="entries">
+        <article class="entry">
+          <h3>只从确认过的入口进入</h3>
+          <p>来源不明的跳转链接、二维码和短网址都可能指向仿冒页面。把糖心官网首页加入书签，是长期最稳妥的访问方式。</p>
+        </article>
+        <article class="entry">
+          <h3>不在陌生页面填写信息</h3>
+          <p>糖心官网不会通过弹窗或第三方页面索要多余信息。遇到要求填写账号密码的陌生窗口，直接关闭并回到首页重新进入。</p>
+        </article>
+        <article class="entry">
+          <h3>保持浏览器为较新版本</h3>
+          <p>页面布局与交互依赖较新的浏览器能力。定期更新浏览器并清理缓存，能避免绝大多数显示与加载问题。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 21C7.2 17.4 3.2 13.9 3.2 9.6A4.8 4.8 0 0 1 12 6.2a4.8 4.8 0 0 1 8.8 3.4c0 4.3-4 7.8-8.8 11.4z" fill="#2a0c14"/>
+            </svg>
+          </span>
+          <span class="brand-name">糖心官网</span>
+        </a>
+        <p>糖心官网首页导航与访问说明，集中入口、分区与答疑，帮助访客用更短的时间找到正确页面。</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4>页面导航</h4>
+          <a href="#entry">访问入口</a>
+          <a href="#guide">访问方式</a>
+          <a href="#sections">内容分区</a>
+        </div>
+        <div class="foot-col">
+          <h4>帮助</h4>
+          <a href="#faq">常见问题</a>
+          <a href="#notice">使用须知</a>
+          <a href="#top">返回顶部</a>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <span>糖心官网 · 首页入口与访问说明</span>
+      <span>页面内容仅用于导航与使用提示</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var btn = document.getElementById('menuBtn');
+    var links = document.getElementById('navLinks');
+    if(!btn || !links) return;
+    btn.addEventListener('click', function(){
+      var open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    links.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        links.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+      }
+    });
+  })();
+</script>
+</body>
+  </html>
